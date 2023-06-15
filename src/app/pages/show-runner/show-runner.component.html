@@ -1,0 +1,115 @@
+<section id="show-run">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-12 col-sm-12"
+        data-aos="fade-down"
+        data-aos-once="false"
+        data-aos-duration="2000"
+      >
+        <div class="img7">
+          <img
+            [src]="ds.baseurl + 'TheForceImage/' + runner.banner_image"
+            alt="The force page"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="show-runner">
+  <div class="container kit">
+    <h2>Categories</h2>
+    <div class="row">
+      <div
+        class="col-lg-6 col-md-6 col-sm-12 box00 mb-3"
+        style="display: flex; justify-content: center"
+        data-aos="flip-up"
+        data-aos-once="false"
+        data-aos-duration="2000"
+      >
+        <div
+          class="showrunnerDiv showrunnerDivimg1"
+          style="display: flex; justify-content: center; align-items: center"
+          routerLink="/founder"
+          [style]="
+            'background:linear gradient( #000, #000), url(' +
+            ds.baseurl +
+            'TheForceImage/' +
+            runner.image +
+            ')'
+          "
+        >
+          <h2 class="showrunnerDivTxt">DIRECTORS</h2>
+        </div>
+      </div>
+      <div
+        class="col-lg-6 col-md-6 col-sm-12 box00"
+        style="display: flex; justify-content: center"
+        data-aos="flip-down"
+        data-aos-once="false"
+        data-aos-duration="2000"
+      >
+        <div
+          class="showrunnerDiv showrunnerDivimg2"
+          style="display: flex; justify-content: center; align-items: center"
+          routerLink="/choreographers"
+          [style]="
+            'background:linear gradient( #000, #000), url(' +
+            ds.baseurl +
+            'TheForceImage/' +
+            runner.image1 +
+            ')'
+          "
+        >
+          <h2 class="showrunnerDivTxt">
+            CHOREOGRAPHERS/ <br />
+            TEACHERS
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-home-social></app-home-social>
+
+<!-- <section>
+  <div class="container-fluid">
+    <div
+      class="container jbdfs"
+      data-aos="fade-down"
+      data-aos-once="false"
+      data-aos-duration="2000"
+    >
+      <h2>FOLLOW US</h2>
+      <div class="hbmx">
+        <div class="react-img">
+          <a href="#">
+            <img src="./assets/image/Rectangle 36.png" alt="" />
+            <i class="fa-brands fa-facebook-f icon-con"></i
+          ></a>
+        </div>
+        <div class="react-img">
+          <a href="#">
+            <img src="./assets/image/Rectangle 37.png" alt="" />
+            <i class="fa-brands fa-instagram icon-con"></i
+          ></a>
+        </div>
+        <div class="react-img">
+          <a href="">
+            <img src="./assets/image/Rectangle 38.png" alt="" />
+            <i class="fa-brands fa-twitter icon-con"></i
+          ></a>
+        </div>
+        <div class="react-img">
+          <a href="#">
+            <img src="./assets/image/Rectangle 39.png" alt="" />
+            <i class="fa-brands fa-tiktok icon-con"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->

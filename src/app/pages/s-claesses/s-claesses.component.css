@@ -1,0 +1,40 @@
+.form-control-2 {
+  float: right !important;
+  background: #f9f9f9 !important;
+  border: none !important;
+  width: 25% !important;
+  padding: 8px 5px !important;
+  margin-top: -2.5rem !important;
+}
+
+td {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 500;
+  padding: 12px;
+  line-height: 2.428571;
+  vertical-align: top;
+  border-top: none;
+  text-align: center;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: var(--bs-table-striped-bg);
+  color: var(--bs-table-striped-color);
+}
+
+table {
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 310px) {
+  .form-control-2 {
+    width: 38% !important;
+  }
+
+  .tb_search i {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}

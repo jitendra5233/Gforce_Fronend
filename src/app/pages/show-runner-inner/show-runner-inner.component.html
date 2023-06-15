@@ -1,0 +1,193 @@
+<!-- <header>
+  <div w3-include-html="header.html"></div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 group-63">
+          <img src="./assets/image/Group 16063.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</header> -->
+
+<section id="show-runin">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-12 col-sm-12"
+        data-aos="fade-down"
+        data-aos-once="false"
+        data-aos-duration="2000"
+      >
+        <div class="img6">
+          <img
+            [src]="ds.baseurl + 'TheForceImage/' + innershow.banner_image"
+            alt="The force page"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container-fluid rect-49">
+  <div class="container rect-49-text">
+    <h2 [innerHTML]="innershow.name"></h2>
+    <p [innerHTML]="innershow.description"></p>
+
+    <!-- <a href="#"><button>Register Now&rarr;</button></a> -->
+  </div>
+</div>
+
+<section id="all-slide1" class="slides-sp">
+  <div class="col-lg-12 slider-imgs">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let i of workshopList">
+        <div>
+          <div class="carousel-cell1" (click)="handleShowDetails()">
+            <div class="content-svg-text1">
+              <div class="content-svg-text1">
+                <img [src]="i.img" alt="" />
+                <h4>{{ i.txt }}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<section id="all-slide11" class="slides-sp">
+  <div class="col-lg-12 slider-imgs">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let i of workshopList">
+        <div>
+          <div class="carousel-cell1" (click)="handleShowDetails()">
+            <div class="content-svg-text1">
+              <div class="content-svg-text1">
+                <img [src]="i.img" alt="" />
+                <h4>{{ i.txt }}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<app-home-social></app-home-social>
+
+<!-- 
+<div class="container-fluid">
+  <div class="container jbdfs">
+    <h2>FOLLOW US</h2>
+    <div class="hbmx">
+      <div class="react-img">
+        <a href="#">
+          <img src="./assets/image/Rectangle 36.png" alt="" />
+          <i class="fa-brands fa-facebook-f icon-con"></i
+        ></a>
+      </div>
+      <div class="react-img">
+        <a href="#">
+          <img src="./assets/image/Rectangle 37.png" alt="" />
+          <i class="fa-brands fa-instagram icon-con"></i
+        ></a>
+      </div>
+      <div class="react-img">
+        <a href="">
+          <img src="./assets/image/Rectangle 38.png" alt="" />
+          <i class="fa-brands fa-twitter icon-con"></i
+        ></a>
+      </div>
+      <div class="react-img">
+        <a href="#">
+          <img src="./assets/image/Rectangle 39.png" alt="" />
+          <i class="fa-brands fa-tiktok icon-con"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="container-fluid next-back">
+    <div class="slider-six1 bindu1">
+      <div class="slider-img-1">
+        <img src="./assets/image/one (2).png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/two.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/three.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/four.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/five.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/one (2).png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/two.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/three.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/four.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/five.png" alt="" />
+      </div>
+    </div>
+  </div> -->
+
+<!-- 
+  <div class="container-fluid">
+    <div class="slider-six2 bindu1">
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2843.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2844.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2845.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2846.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2847.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2848.png" alt="" />
+      </div>
+  
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2843.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2844.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2845.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2846.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2847.png" alt="" />
+      </div>
+      <div class="slider-img-1">
+        <img src="./assets/image/Rectangle 2848.png" alt="" />
+      </div>
+    </div>
+  </div> -->

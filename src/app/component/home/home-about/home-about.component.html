@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row inline-gh">
+      <div
+        class="ramdin-1 about-heading"
+        data-aos="fade-up"
+        data-aos-once="false"
+        data-aos-duration="2000"
+      >
+        <a href="#">
+          <h2 [innerHTML]="homeData.abt_title"></h2>
+        </a>
+        <p [innerHTML]="homeData.abt_description"></p>
+        <!-- <div [innerHTML]="homeData.abt_description"></div> -->
+
+        <button routerLink="/about-us">Read more &rarr;</button>
+      </div>
+      <div class="ramdin-2">
+        <img
+          [src]="ds.baseurl + 'AboutusImage/' + homeData.abt_image"
+          alt=""
+          width="100%"
+        />
+      </div>
+      <div class="ramdin-3 rotate-text">
+        <h2>Dance <br />With Us:</h2>
+        <p>{{ homeData.abt_sub_title }}</p>
+      </div>
+    </div>
+  </div>
+</div>

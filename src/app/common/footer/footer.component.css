@@ -1,0 +1,31 @@
+@media only screen and (max-width: 480px) and (min-width: 310px) {
+  /* .color-alag1.clickable.width-ghat {
+    margin-left: 10px;
+  } */
+}
+
+.footerlinks ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footerlinks ul li a {
+  color: #474d4e;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footerLink {
+  list-style: none;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 30px;
+  transition: all 0.6s;
+}
+
+.footerLink:hover {
+  color: #f06f38 !important;
+}

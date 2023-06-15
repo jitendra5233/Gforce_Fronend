@@ -1,0 +1,125 @@
+<!-----Banner image start------->
+<header id="onln-scl">
+  <div class="container-fluid">
+    <div class="row p-212">
+      <div
+        class="col-12"
+        data-aos="fade-down"
+        data-aos-once="false"
+        data-aos-duration="2000"
+      >
+        <img src="./assets/image/Group 16130.png" alt="" style="width: 100%" />
+      </div>
+    </div>
+  </div>
+</header>
+<!-----Banner image end------->
+
+<!-----online school text start------->
+
+<div class="container-fluid" id="schol-boox">
+  <div class="container">
+    <div class="greybg">
+      <div
+        class="grey-crd1"
+        data-aos="fade-down"
+        data-aos-once="false"
+        data-aos-duration="2000"
+      >
+        <img
+          [src]="ds.baseurl + 'OnlineSchoolImage/' + schoolData.image"
+          alt=""
+        />
+      </div>
+      <div class="grey-crd2">
+        <h2>{{ schoolData.title }}</h2>
+        <!-- <h4>Passion for Dance</h4> -->
+        <p>
+          {{ schoolData.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="all-slides" *ngFor="let a of onlineData">
+  <div class="col-lg-12 slider-imgs">
+    <h2>{{ a.name }} &rarr;</h2>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let i of a.data">
+        <div (click)="showVideoPopup(i.id)">
+          <div class="carousel-cell1">
+            <div class="content-svg-text1">
+              <div class="content-svg-text1">
+                <img [src]="ds.baseurl + 'VideoImage/' + i.image" alt="" />
+                <h4>{{ i.title }}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<!-- <section id="all-slides" class="slides-sp">
+  <div class="col-lg-12 slider-imgs">
+    <h2>Hip-hop classes &rarr;</h2>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let i of workshopList">
+        <div>
+          <div class="carousel-cell1">
+            <div class="content-svg-text1">
+              <div class="content-svg-text1">
+                <img [src]="i.img" alt="" />
+                <h4>{{ i.txt }}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<section id="all-slides" class="slides-sp">
+  <div class="col-lg-12 slider-imgs">
+    <h2>Sexy classes &rarr;</h2>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let i of workshopList">
+        <div>
+          <div class="carousel-cell1">
+            <div class="content-svg-text1">
+              <div class="content-svg-text1">
+                <img [src]="i.img" alt="" />
+                <h4>{{ i.txt }}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<section id="all-slides" class="slides-sp">
+  <div class="col-lg-12 slider-imgs">
+    <h2>Kpop classes &rarr;</h2>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let i of workshopList">
+        <div>
+          <div class="carousel-cell1">
+            <div class="content-svg-text1">
+              <div class="content-svg-text1">
+                <img [src]="i.img" alt="" />
+                <h4>{{ i.txt }}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section> -->
+
+<!-----online school text end------->
